@@ -1,0 +1,15 @@
+.error-input {
+    border: 2px solid red;
+}
+
+.valid-input {
+    border: 2px solid lightgreen;
+}
+
+.error {
+    color: red;
+}
+
+.valid {
+    color: lightgreen;
+}

@@ -1,0 +1,1 @@
+Aqui aniria tota la config per el php per validar y tractar la info 🤙

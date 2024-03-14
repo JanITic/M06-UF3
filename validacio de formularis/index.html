@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registre d'usuaris</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Registre d'usuaris</h2>
+
+<form id="myForm" action="/processar_registre.php" method="post" onsubmit="return validarFormulario()">
+  <label for="nom">Nom:</label><br>
+  <input type="text" id="nom" name="nom" onfocusout="validarUsuari(this)"><br>
+  <span id="error-nom" class="error"></span><br>
+
+  <label for="email">Correu electrònic:</label><br>
+  <input type="email" id="email" name="email" onfocusout="validarCorreu(this)"><br>
+  <span id="error-correu" class="error"></span><br>
+
+  <label for="contrasenya">Contrasenya:</label><br>
+  <input type="password" id="contrasenya" name="contrasenya" oninput="validarContrasenya(this)">
+  <ul id="error-list" class="error"></ul>
+
+  <label for="adreça">Adreça postal:</label><br>
+  <input type="text" id="adreça" name="adreça" required><br><br>
+  <div id="adreça-error" class="error-message"></div>
+
+  <input type="submit" value="Registrar">
+</form>
+
+<script src="js/script.js"></script>
+</body>
+</html>
